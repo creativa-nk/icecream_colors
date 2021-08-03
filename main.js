@@ -48,10 +48,10 @@ function cambiarColor(color){
 
         case 'rgb(251, 164, 198, 0.581)':
         icecream.style.background = 'rgb(248, 33, 107)';
-        drip_big.style.background = 'rgb(248, 33, 107';
-        drip_midle.style.background = 'rgb(248, 33, 107';
-        drip_midle_small.style.background = 'rgb(248, 33, 107';
-        drip_small.style.background = 'rgb(248, 33, 107'; 
+        drip_big.style.background = 'rgb(248, 33, 107)';
+        drip_midle.style.background = 'rgb(248, 33, 107)';
+        drip_midle_small.style.background = 'rgb(248, 33, 107)';
+        drip_small.style.background = 'rgb(248, 33, 107)'; 
         icecream_body.style.background = 'rgb(260, 150, 178)'; 
         break;
         
