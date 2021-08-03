@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>helado</title>
+</head>
+<body id="body">
+    <div class="general-container">
+        <div class="icecream">
+            <div class="icecream_body"></div>
+            <div class="icecream__drip icecream__drip--big"></div>
+            <div class="icecream__drip icecream__drip--midle"></div>
+            <div class="icecream__drip icecream__drip--midle--small"></div>
+            <div class="icecream__drip icecream__drip--small"></div>
+            <div class="icecream__drip--midle-reverse"></div>
+            <div class="icecream__eye icecream__eye--left"></div>
+            <div class="icecream__eye icecream__eye--right"></div>
+            <div class="smile"></div>
+            <div class="wooden_stick"></div>
+        </div>
+        <div class="reflection"></div>
+    </div>
+
+    
+        <form class="controls">
+            <label class="yellow">
+                <input type="radio" class="input" value="rgb(253, 253, 137)" onclick="chBackcolor('rgb(253, 253, 137, 0.581)');cambiarColor('rgb(253, 253, 137, 0.581)') "> 
+                <div class="controls__indicator yellow"></div>
+            </label>
+
+            <lable class="rose">
+                <input type="radio" class="input" value="rgb(251, 164, 198)" onclick="chBackcolor('rgb(251, 164, 198, 0.581)');cambiarColor('rgb(251, 164, 198, 0.581)')"> 
+                <div class="controls__indicator rose"></div>
+            </lable>
+
+            <lable class="blue">
+                <input type="radio" class="input" value="rgb(144, 210, 253)" onclick="chBackcolor('rgb(144, 210, 253, 0.581)');cambiarColor('rgb(144, 210, 253, 0.581)')"> 
+                <div class="controls__indicator blue"></div>
+            </lable>
+
+            <lable class="green">
+                <input type="radio" class="input" value="rgba(164, 243, 127, 0.781)" onclick="chBackcolor('rgba(164, 243, 127, 0.581)');cambiarColor('rgba(164, 243, 127, 0.581)')"> 
+                <div class="controls__indicator green"></div>
+            </lable>
+        </form>
+   
+ <!--   <input type="checkbox" class="on green" data-class="green"/>
+            <input type="checkbox" class="on yellow" data-class="yellow"/>
+            <input type="checkbox" class="on rose" data-class="rose"/>
+            <input type="checkbox" class="on blue" data-class="blue"/> -->
+   
+  <script src="./main.js"></script>  
+</body>
+</html>

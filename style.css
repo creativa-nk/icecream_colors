@@ -1,0 +1,278 @@
+  *{
+     margin: 0;
+     padding: 0;
+  } 
+   /*----------- ANIMACIONES------- */
+
+   @keyframes blink {
+      0%, 95% {
+         transform: scaleY(1);
+      }
+      98%, 100% {
+         transform: scaleY(0.1);
+      }
+   }
+
+   @keyframes float {
+      0% {
+         transform: translateY(5px);
+      }
+      100% {
+         transform: translateY(30px);
+      }
+   }
+
+   @keyframes reflection {
+      0%{
+         transform: scale(0.8);
+      }
+      100%{
+        transform: scale(1); 
+      }
+   }
+body{
+   width: 100vw;
+   height: 100vh;
+   overflow: hidden;
+   background: transparent;
+} 
+
+ .general-container {
+
+   position: absolute;
+   top: 15%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+
+
+ .icecream{  
+   background: greenyellow;
+   animation: float 2.5s infinite alternate;
+   border-radius: 90px 90px 0px 0; /* esquina arriba-izq, arriba-derecha, abajo-derecha, abajo-izq */
+   box-shadow: inset -10px 0px 5px  rgba(41, 41, 41, 0.1);
+   height: 130px;
+   position: relative;
+   transition: background-color 0.25s ease-out;
+   width: 180px;
+   z-index: 2;       
+ }
+.icecream_body{
+   background: rgb(210, 255, 152);
+   border-radius: 0 0 20px 20px;
+   box-shadow: inset -10px 0px 5px rgba(41, 41, 41, 0.1);
+   width:180px;
+   height: 180px;
+   position: absolute;
+   z-index: -4;
+   top:130px ;
+}
+.reflection {
+   animation: reflection 2.5s infinite alternate;
+   width:180px;
+   height: 20%;
+   position: absolute;
+   top: 500px;
+   background: linear-gradient(to bottom, rgba(54, 54, 54, 0.3),rgb(114, 114, 114));
+   z-index: 1;
+   filter: blur(0.5rem);
+   border-radius: 50%;
+ }
+
+/* -------------DRIP----------------------- */
+
+.icecream__drip{
+   transition: background-color 0.25s ease-out;
+   background: greenyellow;
+   position: absolute;
+   top:120px ;
+   border-radius: 0 0 90px 90px;
+   box-shadow: inset 0px -3px 0px rgba(41, 41, 41, 0.1);
+   z-index: 1;
+}
+.icecream__drip--big{
+   height: 40px;
+   width: 30px;
+   left: 100px;
+}
+.icecream__drip--midle{
+   height: 60px;
+   width: 40px;
+   left: 0px;
+}
+.icecream__drip--midle--small{
+   height: 30px;
+   width: 29px;
+   left: 39px;
+}
+.icecream__drip--small{
+   height: 20px;
+   width: 20px;
+   left: 83px;
+   box-shadow: inset 0px -3px 0px rgba(41, 41, 41, 0.1);
+}
+
+/* .icecream__drip--midle-reverse{
+   background:rgb(210, 255, 152);
+   position: absolute;
+   z-index: 2;
+   border-radius: 50% 50% 0 0;
+   height: 20px;
+   width: 15px;
+   top: 125px;
+   left: 68px; 
+} */
+
+
+/* -------------------FACE------------------ */
+.smile {
+   border: 3px solid transparent;
+    border-bottom-color: black;
+    /*   border-top-color: red;
+      border-left-color: green; */
+    border-radius: 50%;
+   height: 50px;
+   left: 75px;
+   position: absolute;
+   top: 45px;
+   width: 30px;
+}
+
+   .icecream__eye {
+		animation: blink 2s infinite alternate;
+      background-color: black;
+      border: 2px solid white;
+      border-radius: 50%;
+      height: 16px;
+      position: absolute;
+      top: 65px;
+      width: 16px;
+   } 
+      .icecream__eye::before,
+      .icecream__eye::after {
+			animation: pulse 1s infinite alternate;
+         background-color: white;
+         border-radius: 50%;
+         content: "";
+         display: block;
+         position: absolute;
+      }
+      
+      .icecream__eye::before {
+         height: 3px;
+         width: 3px;
+         bottom: 3px;
+         right: 3px;
+         
+      }
+      
+      .icecream__eye::after {
+         height: 7px;
+         width: 7px;
+         left: 2px;
+         top: 2px;
+        
+      }
+      
+      .icecream__eye--left {
+         left: 40px;
+      }
+      
+      .icecream__eye--right {
+         right: 40px;
+      }
+
+.wooden_stick{
+   background: rgb(250, 240, 147);
+   position: absolute;
+   top:300px ;
+   left: 65px;
+   width: 50px;
+   height: 100px;
+   border-radius: 0 0 10px 10px;
+   box-shadow: inset -3px 0px 2px  rgba(41, 41, 41, 0.1);
+   z-index: -7;
+}      
+
+/* ---------------REMOTE CONTROL------------------ */
+
+.controls{
+   /* background: tomato; */
+   height: 60px;
+   width: 250px;
+   max-width: 600px;
+   display: flex;
+   justify-content: space-around;
+   margin: 90vh auto;
+}
+label{
+left: 0;
+}
+.controls__indicator{
+   height:50px ;
+   width: 50px;
+   border-radius: 50%;
+   border: 2px solid rgba(39, 39, 39, 0.726);
+   position: absolute;
+}
+/* .controls__label{
+   position: relative;
+} */
+input{
+   width: 55px;
+   height: 55px;
+   border: none;
+   position: absolute;
+   z-index: 2;
+   appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+   cursor: pointer;
+}
+
+.yellow{
+   background: rgb(253, 253, 137);
+}
+.rose{
+   background: rgb(251, 164, 198);
+}
+.blue{
+   background: rgb(144, 210, 253);
+}
+.green{
+   background: rgba(164, 243, 127, 0.781);
+}
+
+input:checked + .controls__indicator  {
+   box-shadow: -3px -3px 0 white,
+               -3px 3px 0 white,
+               3px -3px 0 white,
+               3px 3px 0 white;
+}
+
+
+/* input[type='checkbox'].on{
+   height: 70px;
+   width: 70px;
+   -webkit-appearance: none;
+   box-shadow: 10px 10px 15px rgba(70,70,70,0.12),
+               -10px -10px 15px rgba(255,255,255,0.5);
+   border-radius: 50%;
+   border: 5px solid #ecf0f3;
+   outline: none; 
+   display: flex;    
+   align-items: center;
+   justify-content: center; 
+   cursor: pointer;      
+}
+input[type='checkbox'].on:checked{
+   box-shadow: 10px 10px 15px rgba(70,70,70,0.12),
+   -10px -10px 15px rgba(255,255,255,0.5),
+   inset 10px 10px 15px rgba(70,70,70,0.12),
+   inset -10px -10px 15px rgba(255,255,255,0.5);  
+} */
+
+.yellow input:checked + body{
+ background: brown;
+}
