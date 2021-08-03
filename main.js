@@ -1,4 +1,4 @@
-const btn = document.querySelector('input');
+const btn = document.querySelector('.controls__indicator');
 const body = document.querySelector('body');
 
 /* function chBackcolor(color) {
@@ -11,14 +11,16 @@ let drip_big = document.querySelector('.icecream__drip--big');
 let drip_midle = document.querySelector('.icecream__drip--midle');
 let drip_midle_small = document.querySelector('.icecream__drip--midle--small');
 let drip_small = document.querySelector('.icecream__drip--small');
+let smile = document.querySelector('.smile')
 
 
 function cambiarColor(color){
 
     console.log(color);
+    
 
     document.body.style.background = color;
-    
+
     switch(color){
         case 'rgb(253, 253, 137, 0.581)':
         icecream.style.background = 'yellow';
@@ -27,6 +29,7 @@ function cambiarColor(color){
         drip_midle_small.style.background = 'yellow';
         drip_small.style.background = 'yellow';
         icecream_body.style.background = 'rgb(250, 250, 107)';
+        smile.classList.add('.active')
         break;
 
         case 'rgb(251, 164, 198, 0.581)':
@@ -57,6 +60,15 @@ function cambiarColor(color){
     }
 }
 
+
+
+
+/* btn.on("click", function() {
+    if (smile.hasClass("active")) {
+      smile.removeClass("active");
+    } else {
+      smile.addClass("active");
+    } */
 
 
 /* btn.addEventListener('change', cambiarColor); */
