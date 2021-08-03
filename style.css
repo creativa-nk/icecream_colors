@@ -30,6 +30,9 @@
         transform: scale(1); 
       }
    }
+
+
+
 body{
    width: 100vw;
    height: 100vh;
@@ -37,17 +40,14 @@ body{
    background: transparent;
 } 
 
- .general-container {
-
+.general-container {
    position: absolute;
    top: 15%;
    left: 50%;
    transform: translate(-50%, -50%);
 }
 
-
-
- .icecream{  
+.icecream{  
    background: greenyellow;
    animation: float 2.5s infinite alternate;
    border-radius: 90px 90px 0px 0; /* esquina arriba-izq, arriba-derecha, abajo-derecha, abajo-izq */
@@ -57,7 +57,7 @@ body{
    transition: background-color 0.25s ease-out;
    width: 180px;
    z-index: 2;       
- }
+}
 .icecream_body{
    background: rgb(210, 255, 152);
    border-radius: 0 0 20px 20px;
@@ -113,18 +113,6 @@ body{
    box-shadow: inset 0px -3px 0px rgba(41, 41, 41, 0.1);
 }
 
-/* .icecream__drip--midle-reverse{
-   background:rgb(210, 255, 152);
-   position: absolute;
-   z-index: 2;
-   border-radius: 50% 50% 0 0;
-   height: 20px;
-   width: 15px;
-   top: 125px;
-   left: 68px; 
-} */
-
-
 /* -------------------FACE------------------ */
 .smile {
    border: 3px solid transparent;
@@ -139,50 +127,43 @@ body{
    width: 30px;
 }
 
-   .icecream__eye {
-		animation: blink 2s infinite alternate;
-      background-color: black;
-      border: 2px solid white;
-      border-radius: 50%;
-      height: 16px;
-      position: absolute;
-      top: 65px;
-      width: 16px;
-   } 
-      .icecream__eye::before,
-      .icecream__eye::after {
-			animation: pulse 1s infinite alternate;
-         background-color: white;
-         border-radius: 50%;
-         content: "";
-         display: block;
-         position: absolute;
-      }
-      
-      .icecream__eye::before {
-         height: 3px;
-         width: 3px;
-         bottom: 3px;
-         right: 3px;
-         
-      }
-      
-      .icecream__eye::after {
-         height: 7px;
-         width: 7px;
-         left: 2px;
-         top: 2px;
-        
-      }
-      
-      .icecream__eye--left {
-         left: 40px;
-      }
-      
-      .icecream__eye--right {
-         right: 40px;
-      }
-
+.icecream__eye {
+   animation: blink 2s infinite alternate;
+   background-color: black;
+   border: 2px solid white;
+   border-radius: 50%;
+   height: 16px;
+   position: absolute;
+   top: 65px;
+   width: 16px;
+} 
+.icecream__eye::before,
+.icecream__eye::after {
+   animation: pulse 1s infinite alternate;
+   background-color: white;
+   border-radius: 50%;
+   content: "";
+   display: block;
+   position: absolute;
+}     
+.icecream__eye::before {
+   height: 3px;
+   width: 3px;
+   bottom: 3px;
+   right: 3px;
+}
+.icecream__eye::after {
+   height: 7px;
+   width: 7px;
+   left: 2px;
+   top: 2px; 
+}
+.icecream__eye--left {
+   left: 40px;
+}
+.icecream__eye--right {
+   right: 40px;
+}
 .wooden_stick{
    background: rgb(250, 240, 147);
    position: absolute;
@@ -200,34 +181,20 @@ body{
 .controls{
    /* background: tomato; */
    height: 60px;
-   width: 250px;
-   max-width: 600px;
+   width:100vw;
+   max-width: 500px;
    display: flex;
    justify-content: space-around;
    margin: 90vh auto;
 }
-label{
-left: 0;
-}
+
 .controls__indicator{
    height:50px ;
    width: 50px;
    border-radius: 50%;
-   border: 2px solid rgba(39, 39, 39, 0.726);
-   position: absolute;
-}
-/* .controls__label{
-   position: relative;
-} */
-input{
-   width: 55px;
-   height: 55px;
-   border: none;
-   position: absolute;
-   z-index: 2;
-   appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
+   border: 2px solid rgba(255, 255, 255, 0.726);
+   box-shadow: 10px 10px 15px rgba(70,70,70,0.12),
+               -10px -10px 15px rgba(255, 255, 255, 0.376);
    cursor: pointer;
 }
 
@@ -244,35 +211,5 @@ input{
    background: rgba(164, 243, 127, 0.781);
 }
 
-input:checked + .controls__indicator  {
-   box-shadow: -3px -3px 0 white,
-               -3px 3px 0 white,
-               3px -3px 0 white,
-               3px 3px 0 white;
-}
 
 
-/* input[type='checkbox'].on{
-   height: 70px;
-   width: 70px;
-   -webkit-appearance: none;
-   box-shadow: 10px 10px 15px rgba(70,70,70,0.12),
-               -10px -10px 15px rgba(255,255,255,0.5);
-   border-radius: 50%;
-   border: 5px solid #ecf0f3;
-   outline: none; 
-   display: flex;    
-   align-items: center;
-   justify-content: center; 
-   cursor: pointer;      
-}
-input[type='checkbox'].on:checked{
-   box-shadow: 10px 10px 15px rgba(70,70,70,0.12),
-   -10px -10px 15px rgba(255,255,255,0.5),
-   inset 10px 10px 15px rgba(70,70,70,0.12),
-   inset -10px -10px 15px rgba(255,255,255,0.5);  
-} */
-
-.yellow input:checked + body{
- background: brown;
-}
