@@ -124,13 +124,12 @@ body{
    left: 75px;
    position: absolute;
    width: 30px;
-   top: 90px;
-   transform: rotate(180deg);
+   top: 45px;
 }
 
 .smile.active {
-   top: 45px;
-   transform: rotate(0);
+   top: 90px;
+   transform: rotate(180deg);
 }
 
 .icecream__eye {
@@ -191,7 +190,7 @@ body{
    max-width: 500px;
    display: flex;
    justify-content: space-around;
-   margin: 90vh auto;
+   margin: 80vh auto;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* para borrar el recuadro azul que aparece por defecto con onclick */
 }
 
