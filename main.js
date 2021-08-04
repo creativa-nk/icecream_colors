@@ -12,7 +12,7 @@ let drip_midle = document.querySelector('.icecream__drip--midle');
 let drip_midle_small = document.querySelector('.icecream__drip--midle--small');
 let drip_small = document.querySelector('.icecream__drip--small');
 let smile = document.querySelector('.smile');
-let bubbles = document.querySelectorAll("li[class ='bubbles']")
+let bubbles = document.querySelectorAll("li")
 
 
 function cambiarColor(color){
@@ -20,22 +20,23 @@ function cambiarColor(color){
     console.log(color);
     console.log(bubbles)
 
- /*    for(var i = 0; i< bubbles.length; i++)
+    for(var i = 0; i< bubbles.length; i++)
     {
-        bubbles[i].style.backgroundColor = 'yellow'
-    } */  /* cambia el color de burbujas con class bubbles */
+        bubbles[i].style.backgroundColor = color;
+    }  /* cambia el color de burbujas */
     
 
     document.body.style.background = color;
 
     switch(color){
-        case 'rgb(253, 253, 137, 0.8)':
+        case 'rgb(253, 253, 101 , 0.5)':
         icecream.style.background = 'yellow';
         drip_big.style.background = 'yellow';
         drip_midle.style.background = 'yellow';
         drip_midle_small.style.background = 'yellow';
         drip_small.style.background = 'yellow';
         icecream_body.style.background = 'rgb(250, 250, 107)';
+        bubbles[i].style.backgroundColor = 'yellow'
         break;
 
         case 'rgb(251, 164, 198, 0.581)':
@@ -45,6 +46,7 @@ function cambiarColor(color){
         drip_midle_small.style.background = 'rgb(248, 33, 107)';
         drip_small.style.background = 'rgb(248, 33, 107)'; 
         icecream_body.style.background = 'rgb(260, 150, 178)'; 
+        bubbles[i].style.backgroundColor = 'red';
         break;
         
         case 'rgb(144, 210, 253, 0.581)':
