@@ -80,7 +80,7 @@ body{
 .circles li::before{
    content: '';
    z-index: 0;
-   background: rgba(190, 190, 190, 0.308);
+   background: rgba(253, 243, 243, 0.424);
    position: absolute;
    border-radius: 50%;
    top: -100%;
@@ -112,7 +112,6 @@ body{
    left: 0%;
    width: 80px;
    height: 80px;
-   animation-delay: 7s;
    animation-duration: 5s;
 }
 
@@ -128,14 +127,14 @@ body{
    left: 5%;
    width: 120px;
    height: 120px;
-   animation-delay: 7s;
+   animation-duration: 7s;
 }
 
 .circles li:nth-child(6){
    left: 65%;
    width: 150px;
    height: 150px;
-   animation-delay: 9s;
+   animation-duration: 6s;
 }
 
 .circles li:nth-child(7){
@@ -166,7 +165,6 @@ body{
    left: 65%;
    width: 150px;
    height: 150px;
-   animation-delay: 5s;
    animation-duration: 8s;
 }
 
